@@ -1,0 +1,61 @@
+https://dl.google.com/android/studio/patches/AI-141.1980579-141.2262011-patch-win.jar
+
+C:\Users\123\Document\DreamDictionary-android
+
+\\192.168.1.31
+
+carter.wang/carter_wangqwe
+roy.xing/roy.xingwsx
+
+git@192.168.0.11:edgarcayce/DreamDictionary-android-lite
+git@192.168.0.11:edgarcayce/DreamDictionary-android
+git@192.168.0.11:smartalert-android
+git@192.168.0.11:saddleback-sbnotes-android
+git@192.168.0.11:dtz-dc-android
+git@192.168.0.11:liftit
+git@192.168.0.11:tapple10
+
+Android Studio¥Ú∞¸√¸¡Ó£∫gradlew.bat assembleRelease
+
+
+Android 
+’À∫≈£∫ceosoftcenters.android@gamil.com
+√‹¬Î£∫ceosoftcenters6789
+
+This document will help you install our apk to you Nook devices.
+	Follow the steps:
+	Step 1 : Download the apk file from the link which in the email,and put it on you computer disk(such as d:/example.apk).
+	Step 2 : Download ADB Kits for you computer from the follow link. (http://adbshell.com/downloads)
+						uncompress it to your disk(such as e:/adb or ~/adb).
+	Step 3 : Open a command window or a shell and change to the adb dictionary.Execute the command cd /d e:/adb(window) or cd ~/adb(linux) .
+	Step 4 : Install the apk. Execute the command : adb install d:/example.apk(for window),or adb install ~/example.apk
+	Follow the above steps , you can install the apk to you devices.
+	
+If you want to uninstall our apk from your device following below steps:
+	Step1 : Repeat above Step 3.
+	Step2 : Uninstall apk.Execute the command : adb uninstall com.ceosoftcenters.dreamdictionary 
+
+
+Here is the latest build for 'Dream Dictionary-Nook-Lite 1.2.1(6) and Dream Dictionary-Nook-Paid 1.2.1(7)
+, in this build, we completed the following featuresanges:
+a). Add i18n
+b). Update share feature
+c). UI improvement
+d). General bug fixing.
+
+
+
+java -classpath AI-141.1980579-141.2262011-patch-win.jar com.intellij.updater.Runner install .  
+¡ı≥¨ª€£∫15036131358
+”‡Ω®π˙:13938496600
+∫Œ‘®Ã‘£∫13673990235
+¡ı¿⁄£∫13838265195
+
+
+1.visit developer.android.com and sign in
+2.click Developer Console to show all applications
+3.click the application which you need update and get in
+4.find APK item and click it
+5.find the button "Upload new APK to Production" and click it,there will be alert a dialog
+6.browse the binary file you need upload and wait it upload success
+7.click the button "Publish now to Production"

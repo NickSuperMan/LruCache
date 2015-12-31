@@ -19,18 +19,30 @@ import java.util.Set;
 
 /**
  * Created by roy on 2015/12/31.
- *
  */
 public class ImageLoader2 {
 
+    public static ImageLoader2 mInstance;
     private ImageCache mImageCache;
     private ListView listView;
     private Set<MyAsyncTask> mTask;
 
-    public ImageLoader2(Context context, ListView listView) {
+    private ImageLoader2(Context context, ListView listView) {
 //        mImageCache = new DoubleCache(context);
         this.listView = listView;
         mTask = new HashSet<>();
+    }
+
+    public static ImageLoader2 getInstance(Context context, ListView listView) {
+        if (mInstance == null) {
+            synchronized (ImageLoader2.class) {
+                if (mInstance == null) {
+                    mInstance = new ImageLoader2(context, listView);
+                }
+            }
+        }
+
+        return mInstance;
     }
 
     public void setmImageCache(ImageCache mImageCache) {

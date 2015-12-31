@@ -33,7 +33,7 @@ public class MyListViewAdapter extends BaseAdapter implements AbsListView.OnScro
     public MyListViewAdapter(Context context, List<News> news, ListView listView) {
         mInflater = LayoutInflater.from(context);
         this.mData = news;
-        mImageLoader = new ImageLoader2(context, listView);
+        mImageLoader = ImageLoader2.getInstance(context, listView);
         mImageLoader.setmImageCache(new MemoryCache());
         URLS = new String[mData.size()];
         for (int i = 0; i < mData.size(); i++) {

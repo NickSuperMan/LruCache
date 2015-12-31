@@ -12,7 +12,8 @@ import android.widget.TextView;
 
 import com.example.ceo.lrucache.R;
 import com.example.ceo.lrucache.bean.News;
-import com.example.ceo.lrucache.utils.ImageLoader;
+import com.example.ceo.lrucache.utils.ImageLoader2;
+import com.example.ceo.lrucache.utils.MemoryCache;
 
 import java.util.List;
 
@@ -24,7 +25,7 @@ public class MyListViewAdapter extends BaseAdapter implements AbsListView.OnScro
 
     private List<News> mData;
     private LayoutInflater mInflater;
-    private ImageLoader mImageLoader;
+    private ImageLoader2 mImageLoader;
     public static String[] URLS;
     private int mStart, mEnd;
     private boolean isFirstStart;
@@ -32,7 +33,8 @@ public class MyListViewAdapter extends BaseAdapter implements AbsListView.OnScro
     public MyListViewAdapter(Context context, List<News> news, ListView listView) {
         mInflater = LayoutInflater.from(context);
         this.mData = news;
-        mImageLoader = new ImageLoader(context,listView);
+        mImageLoader = new ImageLoader2(context, listView);
+        mImageLoader.setmImageCache(new MemoryCache());
         URLS = new String[mData.size()];
         for (int i = 0; i < mData.size(); i++) {
             URLS[i] = mData.get(i).getImg_url();

@@ -9,7 +9,7 @@ import java.io.File;
 import java.security.MessageDigest;
 
 /**
- * Created by 123 on 2015/9/7.
+ * Created by roy on 2015/9/7.
  */
 public class CacheUtils {
 
